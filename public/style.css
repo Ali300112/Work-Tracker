@@ -1,0 +1,57 @@
+/* ---------- Existing styles (body, container, table, etc.) ---------- */
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
+body { background:#0b1120; color:#e2e8f0; display:flex; justify-content:center; align-items:flex-start; min-height:100vh; padding:20px; }
+.container { background:#111827; padding:30px; border-radius:15px; width:80%; max-width:1000px; box-shadow:0 0 25px rgba(0,0,0,0.6); }
+h1,h2 { text-align:center; margin-bottom:20px; }
+.input-group { margin-bottom:15px; }
+label { display:block; margin-bottom:5px; color:#94a3b8; font-size:14px; }
+input { width:100%; padding:10px; border-radius:8px; border:none; background:#1f2937; color:#e2e8f0; font-size:14px; }
+button { width:100%; padding:12px; border-radius:10px; border:none; background:#2563eb; color:white; font-size:15px; cursor:pointer; margin-top:10px; transition:.3s; }
+button:hover { background:#1d4ed8; }
+.result { text-align:center; margin-top:15px; }
+#resultText { font-size:22px; font-weight:bold; }
+table { width:100%; border-collapse:collapse; margin-top:15px; }
+th, td { border:1px solid #2a2a2a; padding:8px; text-align:center; }
+th { background:#1e40af; }
+td { background:#1f2937; }
+.action-btn { padding:5px 8px; border:none; border-radius:5px; cursor:pointer; margin:0 2px; }
+.edit-btn { background:#facc15; color:#000; }
+.delete-btn { background:#ef4444; color:#fff; }
+
+/* ---------- Responsive for Monthly Report ---------- */
+@media (max-width: 768px) {
+    .container { width: 95%; padding: 20px; }
+
+    table, thead, tbody, th, td, tr { display: block; }
+
+    thead tr { display: none; }
+
+    tbody tr {
+        margin-bottom: 15px;
+        border: 1px solid #2a2a2a;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    td {
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #94a3b8;
+    }
+
+    .action-btn { margin-top: 5px; width: 48%; }
+
+    #exportPDF, a button { width: 100%; margin-top: 10px; }
+}
+
+@media (min-width: 769px) {
+    .container { width: 80%; }
+}

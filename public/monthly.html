@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monthly Report</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" id="reportContainer">
+    <h1>Monthly Report</h1>
+    <table id="monthlyTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Hours Worked</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2 id="monthTotal"></h2>
+    <button id="exportPDF">Export as PDF</button>
+    <a href="index.html"><button>Back to Home</button></a>
+</div>
+
+<!-- Include jsPDF from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="monthly.js"></script>
+</body>
+</html>

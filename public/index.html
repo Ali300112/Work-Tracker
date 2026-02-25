@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Work Tracker</h1>
+
+    <div class="input-group">
+        <label>Start Time</label>
+        <input type="time" id="startTime">
+    </div>
+
+    <div class="input-group">
+        <label>End Time</label>
+        <input type="time" id="endTime">
+    </div>
+
+    <div class="input-group">
+        <label>Break (minutes)</label>
+        <input type="number" id="breakTime" placeholder="60">
+    </div>
+
+    <button id="calculateBtn">Calculate</button>
+
+    <div class="result">
+        <p id="resultText">00:00</p>
+    </div>
+
+    <a href="monthly.html"><button>Monthly Report</button></a>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
